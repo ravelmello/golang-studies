@@ -5,6 +5,9 @@ import "fmt"
 func main() {
 
 	s := make([]string, 3)
+
+	fmt.Println("Empty", s)
+
 	s = append(s, "d")
 	s = append(s, "e")
 	s[0] = "a"
