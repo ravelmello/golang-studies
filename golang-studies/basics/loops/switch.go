@@ -1,10 +1,11 @@
+package loops
 
-package main
+import (
+	"fmt"
+	"time"
+)
 
-import "fmt"
-import "time"
-
-func main() {
+func Switch() {
 	i := 2
 
 	fmt.Println(i, "por extenso é ")

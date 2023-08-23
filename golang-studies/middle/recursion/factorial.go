@@ -1,14 +1,8 @@
-package main
+package recursion
 
-import "fmt"
-
-func factorial(n int) int {
+func Factorial(n int) int {
 	if n == 0 {
 		return 1
 	}
-	return n * factorial(n-1)
-}
-
-func main() {
-	fmt.Println(factorial(7))
+	return n * Factorial(n-1)
 }

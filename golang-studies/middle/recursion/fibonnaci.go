@@ -1,8 +1,8 @@
-package main
+package recursion
 
 import "fmt"
 
-func fibo(n int) int {
+func Fibonacci(n int) int {
 	if n <= 0 && n%1 != 0 {
 		fmt.Println("Valor menor que zero não permitido")
 		return 0
@@ -11,9 +11,5 @@ func fibo(n int) int {
 		return 1
 	}
 
-	return fibo(n-1) + fibo(n-2)
-}
-
-func main() {
-	fmt.Println(fibo(7))
+	return Fibonacci(n-1) + Fibonacci(n-2)
 }

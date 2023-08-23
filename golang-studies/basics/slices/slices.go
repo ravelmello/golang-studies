@@ -1,8 +1,16 @@
-package main
+package slicesTests
 
 import "fmt"
 
-func main() {
+func GiveMeASlice() []string {
+	s := make([]string, 3)
+	s = append(s, "Hello")
+	s = append(s, "To")
+	s = append(s, "Slice")
+	return s
+}
+
+func sliceTest() {
 
 	s := make([]string, 3)
 

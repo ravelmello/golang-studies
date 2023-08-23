@@ -1,6 +1,6 @@
-package	main
+package loops
 
-import  "fmt"
+import "fmt"
 
 func main() {
   i:=0
@@ -12,5 +12,18 @@ func main() {
 	for j:=0; j<10; j++ {
 		fmt.Println(j)
 	}
+
+	nomes := []string{"Ravel", "Karol", "Miguel", "Alice"}
+
+	interable(nomes)
+
+}
+
+
+func interable(names []string) {
+	for _, name := range names {
+		fmt.Println(name)
+	}
 }
  
+

@@ -8,15 +8,17 @@ import (
 const s string = "CONSTANT"
 
 func main() {
-  fmt.Println(s)
+	fmt.Println(s)
 
 	const n = 400000000
-	const pi = 3.1
-	const d = 3e20/n
+	const pi = 3.1415
+	const d = 3e20 / n
 
 	fmt.Println(d)
 
 	fmt.Println(int64(d))
+
+	fmt.Println(pi)
 
 	fmt.Println(math.Sincos(45))
 }
