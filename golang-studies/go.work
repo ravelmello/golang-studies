@@ -1,8 +1,9 @@
-go 1.21
+go 1.21.0
 
 use (
-	middle/closures
-	middle/recursion
 	basics/loops
 	basics/slices
+	middle/closures
+	middle/recursion
+	middle/structs
 )
