@@ -1,9 +1,11 @@
 go 1.21.0
 
 use (
+	advanced/goroutines
 	basics/loops
 	basics/slices
 	middle/closures
 	middle/recursion
 	middle/structs
+
 )

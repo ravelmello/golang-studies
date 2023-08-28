@@ -1,15 +1,13 @@
 package main
 
 import (
-	"closures"
 	"fmt"
-	"recursion"
-	"slicesTests"
-	"structs"
+	"routines"
+	"time"
 )
 
 func main() {
-	counter := closures.Count()
+	/**counter := closures.Count()
 
 	fmt.Println("Using a factorial ", recursion.Factorial(5))
 	fmt.Println("Using a closure ", counter())
@@ -36,5 +34,20 @@ func main() {
 
 	fmt.Println("Make a person using structs => ", pj)
 	fmt.Println("Get document from interface impl => ", structs.Show(pj))
+
+	*/
+
+	channelNumber := make(chan int, 5)
+
+	go routines.Numbers(channelNumber)
+
+	for v := range channelNumber {
+		fmt.Printf("Get of channel %d\n", v)
+		time.Sleep(time.Millisecond * 140)
+	}
+
+	<-channelNumber
+
+	fmt.Print("Execution finished")
 
 }
